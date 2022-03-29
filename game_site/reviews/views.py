@@ -78,7 +78,7 @@ def user_recommendation_list(request):
         update_clusters()
         user_cluster_name = User.objects.get(username=request.user.username).cluster_set.first().name
 
-    # get usernames for other memebers of the cluster
+    # get usernames for other members of the cluster
     user_cluster_other_members = Cluster.objects.get(name=user_cluster_name).users.exclude(username=request.user.username).all()
     other_members_usernames = set(map(lambda x: x.username, user_cluster_other_members))
 
@@ -89,7 +89,6 @@ def user_recommendation_list(request):
     # then get a game list including the previous IDs, order by rating
     game_list = sorted( list(Game.objects.filter(id__in=other_users_reviews_game_ids)), key=lambda x: x.name, reverse=True)
 
-    # game_list = Game.objects.exclude(id__in=user_reviews_game_ids)
     return render(
         request,
         'reviews/user_recommendation_list.html',
