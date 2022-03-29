@@ -4,9 +4,9 @@
 ![Linux](https://svgshare.com/i/Zhy.svg)
 ![PyPI license](https://img.shields.io/github/license/sanchitsgupta/game-reviews-site)
 
-A simple website that supports adding game reviews, recommends new games to users, and basic user authentication.
+A simple website that supports adding game reviews, recommends new games to users, and has basic user authentication.
 
-New games are recommended using k-means algorithm. We pre-cluster the users, and some user asks for their recommendations, we suggest movies that are highly rated by other users in the same cluster.
+New games are recommended using k-means algorithm. We pre-cluster the users, and when some user asks for their recommendations, we suggest movies that are highly rated by other users in the same cluster.
 
 ## Running
 
@@ -31,4 +31,4 @@ New games are recommended using k-means algorithm. We pre-cluster the users, and
 
 ## Acknowledgements
 
-The code is mainly based off of Jose Dianes' [tutorial](https://www.codementor.io/@jadianes/get-started-with-django-building-recommendation-review-app-du107yb1a) on building a Wine Recommendation Site. Do check out his awesome tutorial!
+This code is mainly based off of Jose Dianes' [tutorial](https://www.codementor.io/@jadianes/get-started-with-django-building-recommendation-review-app-du107yb1a) on building a Wine Recommendation Site. Do check out his awesome tutorial!
