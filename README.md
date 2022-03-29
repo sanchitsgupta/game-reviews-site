@@ -27,7 +27,11 @@ New games are recommended using k-means algorithm. We pre-cluster the users, and
     ```
     $ pipenv run python game_site/manage.py runserver 8000
     ```
-6. Visit http://127.0.0.1:8000 and start exploring.
+6. Visit http://127.0.0.1:8000 and start exploring. You can login using these creds:
+    ```
+    username: john
+    password: gamereview@123
+    ```
 
 ## Acknowledgements
 
