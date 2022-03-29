@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+numpy = "*"
+scikit-learn = "*"
+scipy = "*"
+django-bootstrap3 = "*"
+django-registration-redux = "*"
+pandas = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
